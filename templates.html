@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class= "Form">
+    <form>
+        <h1 style="text-align: center;"><b>Prompt Generator</b></h1>
+         <fieldset>
+            <legend><b>Generated Prompt:</b></legend>
+            <div class="GP">
+            <textarea id="mybox" rows="5" cols="100" readonly="readonly" placeholder="Fill out the form below and watch your prompt appear here."></textarea>
+            </div>
+        </fieldset>
+        
+        <br><br>
+        <div style="text-align: center;">
+        <button type="button" id="Cbutt" style="margin-right: 25px;" onclick="copyPrompt()">COPY PROMPT</button>
+        <button type="button" id="Rbutt" onclick="resetPrompt()">RESET PROMPT</button><br><br>
+        </div>
+
+        <fieldset>
+            <legend><b>Type of content:</b></legend>
+            <input type="radio" id="Facebook" name="content" value="Facebook">
+            <label for="Facebook">Facebook</label>
+            <input type="radio" id="LinkedIn" name="content" value="LinkedIn">
+            <label for="LinkedIn">LinkedIn</label>
+            <input type="radio" id="Instagram" name="content" value="Instagram">
+            <label for="Instagram">Instagram</label>
+            <br>
+            <span class="error">Select the type of content or the closest alternative.</span>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Words count:</b></legend>
+            <div class="Wcount">
+                <textarea id="Wcounts" rows="3" cols="100" type="text" name="count" ></textarea>
+            </div>
+            <span class="eeee">Write how many words count you want.</span>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Main Topic:</b></legend>
+            <div class="Mtopic">
+                <textarea id="kids" rows="3" cols="100" type="text" name="topic" placeholder="best pets for kids" ></textarea>
+            </div>
+            <span class="ff">Write a topic name in a Single word.</span>
+        </fieldset>
+        
+        <br><br>
+
+        <fieldset>
+            <legend><b>Subtopic:</b></legend>
+            <div class="stopic">
+                <textarea id="diwali" rows="3" cols="100" type="text" name="topic" placeholder="dogs, cats, fish" ></textarea>
+            </div>
+            <span class="fff">Comma-separated list of subtopics.</span>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Use these writing styles:</b></legend>
+            <input type="radio" id="Narrative" name="writing_style" value="Narrative" >
+            <label for="Narrative">Narrative</label>
+            <input type="radio" id="Descriptive" name="writing_style" value="Descriptive" >
+            <label for="Descriptive">Descriptive</label>
+            <input type="radio" id="Persuasive" name="writing_style" value="Persuasive">
+            <label for="Persuasive">Persuasive</label>
+            <input type="radio" id="Expository" name="writing_style" value="Expository" >
+            <label for="Expository">Expository</label>
+            <input type="radio" id="Creative" name="writing_style" value="Creative" >
+            <label for="Creative">Creative</label>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Write in this tone:</b></legend>
+            <input type="radio" id="Formal" name="tone" value="Formal" onclick="updateRadioType('Use a formal tone. ')">
+            <label for="Formal">Formal</label>
+            <input type="radio" id="Informal" name="tone" value="Informal" onclick="updateRadioType('Use an informal tone. ')">
+            <label for="Informal">Informal</label>
+            <input type="radio" id="Optimistic" name="tone" value="Optimistic" onclick="updateRadioType('Use an optimistic tone. ')">
+            <label for="Optimistic">Optimistic</label>
+            <input type="radio" id="Worried" name="tone" value="Worried" onclick="updateRadioType('Use a worried tone. ')">
+            <label for="Worried">Worried</label>
+            <input type="radio" id="Friendly" name="tone" value="Friendly" onclick="updateRadioType('Use a friendly tone. ')">
+            <label for="Friendly">Friendly</label>
+            <input type="radio" id="Curious" name="tone" value="Curious" onclick="updateRadioType('Use a curious tone. ')">
+            <label for="Curious">Curious</label>
+            <input type="radio" id="Assertive" name="tone" value="Assertive" onclick="updateRadioType('Use an assertive tone. ')">
+            <label for="Assertive">Assertive</label>
+            <br><br>
+            <input type="radio" id="Encouraging" name="tone" value="Encouraging" onclick="updateRadioType('Use an encouraging tone. ')">
+            <label for="Encouraging">Encouraging</label>
+            <input type="radio" id="Surprised" name="tone" value="Surprised" onclick="updateRadioType('Use a surprised tone. ')">
+            <label for="Surprised">Surprised</label>
+            <input type="radio" id="Cooperative" name="tone" value="Cooperative" onclick="updateRadioType('Use a cooperative tone. ')">
+            <label for="Cooperative">Cooperative</label>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Include these words:</b></legend>
+            <div class="Inctopic">
+                <textarea id="Incstopic" rows="3" cols="100" type="text" name="to" ></textarea>
+            </div>
+            <span class="iiii">Comma-separated list of keywords to include.</span>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend><b>Exclude these words:</b></legend>
+            <div class="Extopic">
+                <textarea id="Exstopic" rows="3" cols="100" type="text" name="topi" ></textarea>
+            </div>
+            <span class="eeee">Comma-separated list of keywords to exclude.</span>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

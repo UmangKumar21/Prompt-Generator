@@ -1,0 +1,78 @@
+body{
+    background: -webkit-linear-gradient(to right, #a7fdcc, #12dafb,#3FF8F5);
+    background: linear-gradient(to right, #a7fdcc, #bacdfc,#12dafb); 
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+.Form{
+    padding: 20px;
+    border: 1px solid #272a7b;
+    border-radius: 15px;
+    border-width: 10px;
+    
+}
+textarea{
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:monospace;
+}
+
+
+#Cbutt {
+    background-color: #999494; 
+    color: rgb(255, 0, 0); 
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#Cbutt:hover {
+    background-color: #04ff00; 
+}
+#Rbutt {
+    background-color: #999494; 
+    color: rgb(0, 255, 4); 
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#Rbutt:hover {
+    background-color: #f81e05; 
+}
+
+
+button[type="button"] {
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+
+}
+
+span{
+    font-style: italic;
+    font-variant: small-caps;
+    color: #646060;
+    font-size: 19px;
+}
+
+#mybox{
+    box-shadow: #646060 2px 2px 5px 2px;
+}
+
+fieldset{
+    border: 1px solid #272a7b;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    margin: 3px;
+    font-size: 19px;
+}
+
+
+
+
+
